@@ -1,0 +1,17 @@
+
+exposures:
+  - name: Course_dashboard
+    label: Course Dashboard
+    type: dashboard
+    maturity: low
+    url: https://e3e7c422.us2a.app.preset.io/superset/dashboard/8/?edit=true&native_filters_key=wEkst7SDfeU5uhHeWOcB7x-wcIO6GWBf8T2rSHAWKWPW1kr9VaH2R6CCucsXCWbl
+    description: Executive Dashboard about Airbnb listings and hosts
+
+
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('mart_fullmoon_reviews')
+
+    owner:
+      name: Zoltan C. Toth
+      email: dbtstudent@gmail.com
